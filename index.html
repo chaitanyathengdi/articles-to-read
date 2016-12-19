@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="articlesApp">
+    <head>
+        <title ng-bind="title">Angular Application</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="lib/angular-1.5.7.js"></script>
+    </head>
+    <body ng-controller="MainController as controller">
+        <h2>{{ controller.heading }}</h2>
+        <table id="main-table">
+        <tr ng-repeat="(name, link) in controller.articles">
+            <td>{{ $index + 1 }}.</td>
+            <td><a href="{{ link }}">{{ name }}</a></td>
+        </tr>
+        </table>
+        <script src="app.js"></script>
+    </body>
+</html>
