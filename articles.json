@@ -1,9 +1,9 @@
-{
-  "James Clear: 10 Best Articles of 2016" : "http://jamesclear.com/best-articles-2016",
-  "The Akrasia Effect: Why We Don’t Follow Through on What We Set Out to Do and What to Do About It" : "http://jamesclear.com/akrasia",
-  "The Power of Delayed Gratification" : "http://jamesclear.com/delayed-gratification",
-  "Best Business Books" : "http://jamesclear.com/best-books/business",
-  "Demystifying JavaScript Closures, Callbacks and IIFEs" : "https://www.sitepoint.com/demystifying-javascript-closures-callbacks-iifes/",
-  "Learning Advanced Javascript" : "http://ejohn.org/apps/learn/",
-  "Motivation : Lessons Learned from Twyla Tharp" : "http://jamesclear.com/twyla-tharp"
-}
+[
+  { "link" : "http://jamesclear.com/best-articles-2016", "title" : "James Clear: 10 Best Articles of 2016" },
+  { "link" : "http://jamesclear.com/akrasia", "title" : "The Akrasia Effect: Why We Don’t Follow Through on What We Set Out to Do and What to Do About It" },
+  { "link" : "http://jamesclear.com/delayed-gratification", "title" : "The Power of Delayed Gratification" },
+  { "link" : "http://jamesclear.com/best-books/business", "title" : "Best Business Books" },
+  { "link" : "https://www.sitepoint.com/demystifying-javascript-closures-callbacks-iifes/", "title" : "Demystifying JavaScript Closures, Callbacks and IIFEs" },
+  { "link" : "http://ejohn.org/apps/learn/", "title" : "Learning Advanced Javascript" },
+  { "link" : "http://jamesclear.com/twyla-tharp", "title" : "Motivation : Lessons Learned from Twyla Tharp" }
+]
