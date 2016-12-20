@@ -8,9 +8,9 @@
     <body ng-controller="MainController as controller">
         <h2>{{ controller.heading }}</h2>
         <table id="main-table">
-        <tr ng-repeat="(name, link) in controller.articles">
+        <tr ng-repeat="article in controller.articles">
             <td>{{ $index + 1 }}.</td>
-            <td><a href="{{ link }}">{{ name }}</a></td>
+            <td><a href="{{ article.link }}">{{ article.title }}</a></td>
         </tr>
         </table>
         <script src="app.js"></script>
