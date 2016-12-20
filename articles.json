@@ -5,5 +5,7 @@
   { "link" : "http://jamesclear.com/best-books/business", "title" : "Best Business Books" },
   { "link" : "https://www.sitepoint.com/demystifying-javascript-closures-callbacks-iifes/", "title" : "Demystifying JavaScript Closures, Callbacks and IIFEs" },
   { "link" : "http://ejohn.org/apps/learn/", "title" : "Learning Advanced Javascript" },
-  { "link" : "http://jamesclear.com/willpower-decision-fatigue", "title" : "How Willpower Works: How to Avoid Bad Decisions" }
+  { "link" : "http://jamesclear.com/willpower-decision-fatigue", "title" : "How Willpower Works: How to Avoid Bad Decisions" },
+  { "link" : "http://www.jamesaltucher.com/2016/05/one-formula-happiness-nobody-told/", "title" : "The One Formula For Happiness Nobody Told Me" },
+  { "link" : "http://jamesclear.com/procrastination", "title" : "Procrastination: A Scientific Guide on How to Stop Procrastinating" }
 ]
