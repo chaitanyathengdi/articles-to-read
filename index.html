@@ -6,7 +6,7 @@
         <script src="lib/angular-1.5.7.js"></script>
     </head>
     <body ng-controller="MainController as controller">
-        <h2>{{ controller.heading }}</h2>
+        <h2 ng-bind="controller.heading">Main Page</h2>
         <table id="main-table">
         <tr ng-repeat="article in controller.articles">
             <td>{{ $index + 1 }}.</td>
