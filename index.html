@@ -7,12 +7,33 @@
     </head>
     <body ng-controller="MainController as controller">
         <h2 ng-bind="controller.heading">Main Page</h2>
-        <table id="main-table">
-        <tr ng-repeat="article in controller.articles">
-            <td>{{ $index + 1 }}.</td>
-            <td><a href="{{ article.link }}">{{ article.title }}</a></td>
-        </tr>
-        </table>
+		<div id="main">
+		<div ng-hide="controller.showForm || controller.showResponse" class="section">
+            <table id="articles-table">
+                <tr ng-repeat="article in controller.articles">
+                    <td>{{ $index + 1 }}.</td>
+                    <td><a href="{{ article.link }}">{{ article.title }}</a></td>
+        			<td><button ng-click="controller.editArticle(article.id, article.title, article.link, $index)">Edit</button></td>
+        			<td><button ng-click="controller.deleteArticle(article.id, article.title)">Delete</button></td>
+                </tr>
+            </table>
+			<button ng-click="controller.addArticle()">Add new Article</button>
+			<button ng-click="controller.exit()">Exit</button>
+		</div>
+		<div ng-show="controller.showForm" class="section">
+			<form name="addEditForm" novalidate>
+				<div class="width-10"><label>Id</label></div> <div class="width-80"><input type="text" ng-readonly="true" ng-model="controller.formObject.id"></div>
+				<div class="width-10"><label>Link</label></div> <div class="width-80"> <input type="text" ng-model="controller.formObject.link"></div>
+				<div class="width-10"><label>Title</label></div> <div class="width-80"> <input type="text" ng-model="controller.formObject.title"></div>
+				<div><button type="submit" ng-click="controller.saveArticle(controller.formObject)">Submit</button></div>
+			</form>		
+		</div>
+		<div ng-show="controller.showResponse" class="section">
+			Response: 
+			<div id="response-window"><pre>{{ controller.articles | json }}</pre></div>
+			<button ng-click="controller.showResponse = false;">Back to articles</button>
+		</div>
+		</div>
         <script src="app.js"></script>
     </body>
 </html>
