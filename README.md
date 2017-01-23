@@ -12,3 +12,8 @@ Also, if I make any changes to the list, I need to manually save the list by cop
 but the task seems a bit trivial for needing to add a whole backend to this.
 
 
+2017-01-23:
+
+Added save file functionality. Uses FileSaver.js taken from eligrey: https://github.com/eligrey/FileSaver.js
+
+

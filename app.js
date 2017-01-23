@@ -8,20 +8,19 @@ function run($rootScope) {
     $rootScope.title = "ArticlesApp";
 }
 
-function MainController(JsonService) {
+function MainController(JsonService, $filter) {
     
     var vm = this;
     vm.articles = [];
     vm.heading = "Articles to Read";
     vm.showForm = false;
-	vm.showResponse = false;
 	vm.formObject = {};
 
 	vm.addArticle = addArticle;
 	vm.deleteArticle = deleteArticle;
 	vm.editArticle = editArticle;
-	vm.exit = exit;
 	vm.saveArticle = saveArticle;
+	vm.saveFile = saveFile;
 
     JsonService.fetchArticles().then(fetchSuccess, fetchError);
 
@@ -49,8 +48,13 @@ function MainController(JsonService) {
 		vm.formObject.position = position;
     }
 
-	function exit() {
-		vm.showResponse = true;
+	function saveFile() {
+		var fileName = "articles.json";
+		fileName = prompt("Enter file name:", fileName);
+		if(!!fileName) {
+			var file = new File([$filter('json')(vm.articles, 4)], fileName, {type: "application/json;charset=utf-8"});
+			saveAs(file);
+		}
 	}
 
     function fetchError(response) {
