@@ -173,5 +173,10 @@
         "id": 1497719294781,
         "title": "Codelord.net Archives",
         "link": "http://www.codelord.net/blog/archives/"
+    },
+    {
+        "id": 1497730144669,
+        "title": "Interceptors",
+        "link": "http://www.webdeveasy.com/interceptors-in-angularjs-and-useful-examples/"
     }
 ]
