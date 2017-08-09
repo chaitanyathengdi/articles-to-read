@@ -203,5 +203,10 @@
         "id": 1502128031199,
         "title": "Induction vs DC brushless motors",
         "link": "https://www.tesla.com/blog/induction-versus-dc-brushless-motors"
+    },
+    {
+        "id": 1502286923660,
+        "title": "10 things I hate about Git",
+        "link": "https://stevebennett.me/2012/02/24/10-things-i-hate-about-git/"
     }
 ]
