@@ -258,5 +258,11 @@
         "id": 1504424981303,
         "title": "Amazon: interview tip",
         "link": "https://www.cnbc.com/2017/08/14/amazon-recruiter-reveals-her-no-1-tip-for-a-successful-job-interview.html"
+    },
+    {
+        "id": 1505484373724,
+        "title": "Testing Javascript with Jasmine and Karma",
+        "link": "https://inviqa.com/blog/testing-javascript-get-started-jasmine-0"
     }
+    
 ]
